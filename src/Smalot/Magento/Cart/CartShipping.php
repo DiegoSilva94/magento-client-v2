@@ -36,7 +36,7 @@ class CartShipping extends MagentoModuleAbstract
      */
     public function getList($quoteId, $store = null)
     {
-        return $this->__createAction('cart_shipping.list', func_get_args());
+        return $this->__createAction('cartShippingList', func_get_args());
     }
 
     /**
@@ -50,6 +50,6 @@ class CartShipping extends MagentoModuleAbstract
      */
     public function getMethod($quoteId, $shippingMethod, $store = null)
     {
-        return $this->__createAction('cart_shipping.method', func_get_args());
+        return $this->__createAction('cartShippingMethod', func_get_args());
     }
 }

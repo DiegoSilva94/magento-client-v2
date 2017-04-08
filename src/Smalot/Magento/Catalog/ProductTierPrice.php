@@ -36,7 +36,7 @@ class ProductTierPrice extends MagentoModuleAbstract
      */
     public function getInfo($productId, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_attribute_tier_price.info', func_get_args());
+        return $this->__createAction('catalogProductAttributeTierPriceInfo', func_get_args());
     }
 
     /**
@@ -50,6 +50,6 @@ class ProductTierPrice extends MagentoModuleAbstract
      */
     public function update($productId, $tierPrices, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_attribute_tier_price.update', func_get_args());
+        return $this->__createAction('catalogProductAttributeTierPriceUpdate', func_get_args());
     }
 }

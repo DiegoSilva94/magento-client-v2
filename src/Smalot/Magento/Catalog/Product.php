@@ -39,7 +39,7 @@ class Product extends MagentoModuleAbstract
      */
     public function create($type, $set, $sku, $productData, $storeView = null)
     {
-        return $this->__createAction('catalog_product.create', func_get_args());
+        return $this->__createAction('catalogProductCreate', func_get_args());
     }
 
     /**
@@ -51,7 +51,7 @@ class Product extends MagentoModuleAbstract
      */
     public function setCurrentStore($storeView)
     {
-        return $this->__createAction('catalog_product.currentStore', func_get_args());
+        return $this->__createAction('catalogProductCurrentStore', func_get_args());
     }
 
 
@@ -65,7 +65,7 @@ class Product extends MagentoModuleAbstract
      */
     public function delete($productId, $identifierType = null)
     {
-        return $this->__createAction('catalog_product.delete', func_get_args());
+        return $this->__createAction('catalogProductDelete', func_get_args());
     }
 
     /**
@@ -79,7 +79,7 @@ class Product extends MagentoModuleAbstract
      */
     public function getSpecialPrice($productId, $storeView = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_product.getSpecialPrice', func_get_args());
+        return $this->__createAction('catalogProductGetSpecialPrice', func_get_args());
     }
 
     /**
@@ -94,7 +94,7 @@ class Product extends MagentoModuleAbstract
      */
     public function getInfo($productId, $storeView = null, $attributes = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_product.info', func_get_args());
+        return $this->__createAction('catalogProductInfo', func_get_args());
     }
 
     /**
@@ -107,7 +107,7 @@ class Product extends MagentoModuleAbstract
      */
     public function getList($filters, $storeView = null)
     {
-        return $this->__createAction('catalog_product.list', func_get_args());
+        return $this->__createAction('catalogProductList', func_get_args());
     }
 
     /**
@@ -121,7 +121,7 @@ class Product extends MagentoModuleAbstract
      */
     public function getListOfAdditionalAttributes($productType, $attributeSetId)
     {
-        return $this->__createAction('catalog_product.listOfAdditionalAttributes', func_get_args());
+        return $this->__createAction('catalogProductListOfAdditionalAttributes', func_get_args());
     }
 
     /**
@@ -144,7 +144,7 @@ class Product extends MagentoModuleAbstract
         $storeView = null,
         $productIdentifierType = null
     ) {
-        return $this->__createAction('catalog_product.setSpecialPrice', func_get_args());
+        return $this->__createAction('catalogProductSetSpecialPrice', func_get_args());
     }
 
     /**
@@ -160,6 +160,6 @@ class Product extends MagentoModuleAbstract
      */
     public function update($productId, $productData, $storeView = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_product.update', func_get_args());
+        return $this->__createAction('cataloProductUpdate', func_get_args());
     }
 }

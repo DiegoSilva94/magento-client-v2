@@ -36,7 +36,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function addOption($attribute, $data)
     {
-        return $this->__createAction('product_attribute.addOption', func_get_args());
+        return $this->__createAction('catalogProductAttributeAddOption', func_get_args());
     }
 
     /**
@@ -48,7 +48,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function create($data)
     {
-        return $this->__createAction('product_attribute.create', func_get_args());
+        return $this->__createAction('catalogProductAttributeCreate', func_get_args());
     }
 
     /**
@@ -60,7 +60,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function setCurrentStore($storeView)
     {
-        return $this->__createAction('product_attribute.currentStore', func_get_args());
+        return $this->__createAction('catalogProductAttributeCurrentStore', func_get_args());
     }
 
     /**
@@ -72,7 +72,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function getInfo($attribute)
     {
-        return $this->__createAction('product_attribute.info', func_get_args());
+        return $this->__createAction('catalogProductAttributeInfo', func_get_args());
     }
 
     /**
@@ -84,7 +84,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function getList($setId)
     {
-        return $this->__createAction('product_attribute.list', func_get_args());
+        return $this->__createAction('catalogProductAttributeList', func_get_args());
     }
 
     /**
@@ -97,7 +97,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function getOptions($attributeId, $storeView = null)
     {
-        return $this->__createAction('product_attribute.options', func_get_args());
+        return $this->__createAction('catalogProductAttributeOptions', func_get_args());
     }
 
     /**
@@ -109,7 +109,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function remove($attribute)
     {
-        return $this->__createAction('product_attribute.remove', func_get_args());
+        return $this->__createAction('catalogProductAttributeRemove', func_get_args());
     }
 
     /**
@@ -122,7 +122,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function removeOption($attribute, $optionId)
     {
-        return $this->__createAction('product_attribute.removeOption', func_get_args());
+        return $this->__createAction('catalogProductAttributeRemoveOption', func_get_args());
     }
 
     /**
@@ -132,7 +132,7 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function getTypes()
     {
-        return $this->__createAction('product_attribute.types', func_get_args());
+        return $this->__createAction('catalogProductAttributeTypes', func_get_args());
     }
 
     /**
@@ -145,6 +145,6 @@ class ProductAttribute extends MagentoModuleAbstract
      */
     public function update($attribute, $data)
     {
-        return $this->__createAction('product_attribute.update', func_get_args());
+        return $this->__createAction('catalogProductAttributeUpdate', func_get_args());
     }
 }

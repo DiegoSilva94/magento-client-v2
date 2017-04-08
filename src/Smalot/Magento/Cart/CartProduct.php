@@ -37,7 +37,7 @@ class CartProduct extends MagentoModuleAbstract
      */
     public function add($quoteId, $productsData, $storeId = null)
     {
-        return $this->__createAction('cart_product.add', func_get_args());
+        return $this->__createAction('cartProductAdd', func_get_args());
     }
 
     /**
@@ -50,7 +50,7 @@ class CartProduct extends MagentoModuleAbstract
      */
     public function getList($quoteId, $store = null)
     {
-        return $this->__createAction('cart_product.list', func_get_args());
+        return $this->__createAction('cartProductList', func_get_args());
     }
 
     /**
@@ -64,7 +64,7 @@ class CartProduct extends MagentoModuleAbstract
      */
     public function moveToCustomerQuote($quoteId, $productsData, $store = null)
     {
-        return $this->__createAction('cart_product.moveToCustomerQuote', func_get_args());
+        return $this->__createAction('cartProductMoveToCustomerQuote', func_get_args());
     }
 
     /**
@@ -78,7 +78,7 @@ class CartProduct extends MagentoModuleAbstract
      */
     public function remove($quoteId, $productsData, $store = null)
     {
-        return $this->__createAction('cart_product.remove', func_get_args());
+        return $this->__createAction('cartProductRemove', func_get_args());
     }
 
     /**
@@ -92,6 +92,6 @@ class CartProduct extends MagentoModuleAbstract
      */
     public function update($quoteId, $productsData, $store = null)
     {
-        return $this->__createAction('cart_product.update', func_get_args());
+        return $this->__createAction('cartProduct.update', func_get_args());
     }
 }

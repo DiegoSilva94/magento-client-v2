@@ -33,6 +33,6 @@ class ProductType extends MagentoModuleAbstract
      */
     public function getList()
     {
-        return $this->__createAction('catalog_product_type.list', func_get_args());
+        return $this->__createAction('catalogProductTypeList', func_get_args());
     }
 }

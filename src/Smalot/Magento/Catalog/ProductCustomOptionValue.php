@@ -38,7 +38,7 @@ class ProductCustomOptionValue extends MagentoModuleAbstract
      */
     public function add($optionId, $data, $store = null)
     {
-        return $this->__createAction('product_custom_option_value.add', func_get_args());
+        return $this->__createAction('catalogProductCustomOptionValueAdd', func_get_args());
     }
 
     /**
@@ -51,7 +51,7 @@ class ProductCustomOptionValue extends MagentoModuleAbstract
      */
     public function getInfo($valueId, $store = null)
     {
-        return $this->__createAction('product_custom_option_value.info', func_get_args());
+        return $this->__createAction('catalogProductCustomOptionValueInfo', func_get_args());
     }
 
     /**
@@ -65,7 +65,7 @@ class ProductCustomOptionValue extends MagentoModuleAbstract
      */
     public function getList($optionId, $store = null)
     {
-        return $this->__createAction('product_custom_option_value.list', func_get_args());
+        return $this->__createAction('catalogProductCustomOptionValueList', func_get_args());
     }
 
     /**
@@ -77,7 +77,7 @@ class ProductCustomOptionValue extends MagentoModuleAbstract
      */
     public function remove($valueId)
     {
-        return $this->__createAction('product_custom_option_value.remove', func_get_args());
+        return $this->__createAction('catalogProductCustomOptionValueRemove', func_get_args());
     }
 
     /**
@@ -91,6 +91,6 @@ class ProductCustomOptionValue extends MagentoModuleAbstract
      */
     public function update($valueId, $data, $store = null)
     {
-        return $this->__createAction('product_custom_option_value.update', func_get_args());
+        return $this->__createAction('catalogProductCustomOptionValueUpdate', func_get_args());
     }
 }

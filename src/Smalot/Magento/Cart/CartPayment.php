@@ -36,7 +36,7 @@ class CartPayment extends MagentoModuleAbstract
      */
     public function getList($quoteId, $store = null)
     {
-        return $this->__createAction('cart_payment.list', func_get_args());
+        return $this->__createAction('cartPaymentList', func_get_args());
     }
 
     /**
@@ -50,6 +50,6 @@ class CartPayment extends MagentoModuleAbstract
      */
     public function getMethod($quoteId, $paymentData, $store = null)
     {
-        return $this->__createAction('cart_payment.method', func_get_args());
+        return $this->__createAction('cartPaymentMethod', func_get_args());
     }
 }

@@ -35,7 +35,7 @@ class CategoryAttributes extends MagentoModuleAbstract
      */
     public function setCurrentStore($storeView)
     {
-        return $this->__createAction('catalog_category_attribute.currentStore', func_get_args());
+        return $this->__createAction('catalogCategoryAttributeCurrentStore', func_get_args());
     }
 
     /**
@@ -45,7 +45,7 @@ class CategoryAttributes extends MagentoModuleAbstract
      */
     public function getList()
     {
-        return $this->__createAction('catalog_category_attribute.list', func_get_args());
+        return $this->__createAction('catalogCategoryAttributeList', func_get_args());
     }
 
     /**
@@ -58,6 +58,6 @@ class CategoryAttributes extends MagentoModuleAbstract
      */
     public function getOptions($attributeId, $storeView = null)
     {
-        return $this->__createAction('catalog_category_attribute.options', func_get_args());
+        return $this->__createAction('catalogCategoryAttributeOptions', func_get_args());
     }
 }

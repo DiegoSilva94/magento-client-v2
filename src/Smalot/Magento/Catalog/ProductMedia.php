@@ -38,7 +38,7 @@ class ProductMedia extends MagentoModuleAbstract
      */
     public function create($product, $data, $storeView = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_attribute_media.create', func_get_args());
+        return $this->__createAction('catalogProductAttributeMediaCreate', func_get_args());
     }
 
     /**
@@ -50,7 +50,7 @@ class ProductMedia extends MagentoModuleAbstract
      */
     public function setCurrentStore($storeView)
     {
-        return $this->__createAction('catalog_product_attribute_media.currentStore', func_get_args());
+        return $this->__createAction('catalogProductAttributeMediaCurrentStore', func_get_args());
     }
 
     /**
@@ -65,7 +65,7 @@ class ProductMedia extends MagentoModuleAbstract
      */
     public function getInfo($productId, $file, $storeView = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_attribute_media.info', func_get_args());
+        return $this->__createAction('catalogProductAttributeMediaInfo', func_get_args());
     }
 
     /**
@@ -79,7 +79,7 @@ class ProductMedia extends MagentoModuleAbstract
      */
     public function getList($productId, $storeView = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_attribute_media.list', func_get_args());
+        return $this->__createAction('catalogProductAttributeMediaList', func_get_args());
     }
 
     /**
@@ -93,7 +93,7 @@ class ProductMedia extends MagentoModuleAbstract
      */
     public function remove($productId, $file, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_attribute_media.remove', func_get_args());
+        return $this->__createAction('catalogProductAttributeMediaRemove', func_get_args());
     }
 
     /**
@@ -107,7 +107,7 @@ class ProductMedia extends MagentoModuleAbstract
      */
     public function getTypes($setId)
     {
-        return $this->__createAction('catalog_product_attribute_media.types', func_get_args());
+        return $this->__createAction('catalogProductAttributeMediaTypes', func_get_args());
     }
 
     /**
@@ -123,6 +123,6 @@ class ProductMedia extends MagentoModuleAbstract
      */
     public function update($productId, $file, $data, $storeView = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_attribute_media.update', func_get_args());
+        return $this->__createAction('catalogProductAttributeMediaUpdate', func_get_args());
     }
 }

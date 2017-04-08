@@ -38,7 +38,7 @@ class CartCoupon extends MagentoModuleAbstract
      */
     public function add($quoteId, $couponCode, $store = null)
     {
-        return $this->__createAction('cart_coupon.add', func_get_args());
+        return $this->__createAction('cartCouponAdd', func_get_args());
     }
 
     /**
@@ -51,6 +51,6 @@ class CartCoupon extends MagentoModuleAbstract
      */
     public function remove($quoteId, $store = null)
     {
-        return $this->__createAction('cart_coupon.remove', func_get_args());
+        return $this->__createAction('cartCouponRemove', func_get_args());
     }
 }

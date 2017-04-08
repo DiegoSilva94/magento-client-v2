@@ -38,7 +38,7 @@ class ProductAttributeSet extends MagentoModuleAbstract
      */
     public function attributeAdd($attributeId, $attributeSetId, $attributeGroupId = null, $sortOrder = null)
     {
-        return $this->__createAction('product_attribute_set.attributeAdd', func_get_args());
+        return $this->__createAction('catalogProductAttributeSetAttributeAdd', func_get_args());
     }
 
     /**
@@ -51,7 +51,7 @@ class ProductAttributeSet extends MagentoModuleAbstract
      */
     public function attributeRemove($attributeId, $attributeSetId)
     {
-        return $this->__createAction('product_attribute_set.attributeRemove', func_get_args());
+        return $this->__createAction('catalogProductAttributeSetAttributeRemove', func_get_args());
     }
 
     /**
@@ -64,7 +64,7 @@ class ProductAttributeSet extends MagentoModuleAbstract
      */
     public function create($attributeSetName, $skeletonSetId)
     {
-        return $this->__createAction('product_attribute_set.create', func_get_args());
+        return $this->__createAction('catalogProductAttributeSetCreate', func_get_args());
     }
 
     /**
@@ -77,7 +77,7 @@ class ProductAttributeSet extends MagentoModuleAbstract
      */
     public function groupAdd($attributeSetId, $groupName)
     {
-        return $this->__createAction('product_attribute_set.groupAdd', func_get_args());
+        return $this->__createAction('catalogProductAttributeSetGroupAdd', func_get_args());
     }
 
     /**
@@ -89,7 +89,7 @@ class ProductAttributeSet extends MagentoModuleAbstract
      */
     public function groupRemove($attributeGroupId)
     {
-        return $this->__createAction('product_attribute_set.groupRemove', func_get_args());
+        return $this->__createAction('catalogProductAttributeSetGroupRemove', func_get_args());
     }
 
     /**
@@ -102,7 +102,7 @@ class ProductAttributeSet extends MagentoModuleAbstract
      */
     public function groupRename($groupId, $groupName)
     {
-        return $this->__createAction('product_attribute_set.groupRename', func_get_args());
+        return $this->__createAction('catalogProductAttributeSetGroupRename', func_get_args());
     }
 
     /**
@@ -112,7 +112,7 @@ class ProductAttributeSet extends MagentoModuleAbstract
      */
     public function getList()
     {
-        return $this->__createAction('product_attribute_set.list', func_get_args());
+        return $this->__createAction('catalogProductAttributeSetList', func_get_args());
     }
 
     /**
@@ -125,6 +125,6 @@ class ProductAttributeSet extends MagentoModuleAbstract
      */
     public function remove($attributeSetId, $forceProductsRemove)
     {
-        return $this->__createAction('product_attribute_set.remove', func_get_args());
+        return $this->__createAction('catalogProductAttributeSetRemove', func_get_args());
     }
 }

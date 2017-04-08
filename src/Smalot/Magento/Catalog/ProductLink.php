@@ -45,7 +45,7 @@ class ProductLink extends MagentoModuleAbstract
      */
     public function assign($type, $productId, $linkedProductId, $data, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_link.assign', func_get_args());
+        return $this->__createAction('catalogProductLink.assign', func_get_args());
     }
 
     /**
@@ -57,7 +57,7 @@ class ProductLink extends MagentoModuleAbstract
      */
     public function getAttributes($type)
     {
-        return $this->__createAction('catalog_product_link.attributes', func_get_args());
+        return $this->__createAction('catalogProductLink.attributes', func_get_args());
     }
 
     /**
@@ -71,7 +71,7 @@ class ProductLink extends MagentoModuleAbstract
      */
     public function getList($type, $productId, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_link.list', func_get_args());
+        return $this->__createAction('catalogProductLink.list', func_get_args());
     }
 
     /**
@@ -86,7 +86,7 @@ class ProductLink extends MagentoModuleAbstract
      */
     public function remove($type, $productId, $linkedProductId, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_link.remove', func_get_args());
+        return $this->__createAction('catalogProductLinkRemove', func_get_args());
     }
 
     /**
@@ -96,7 +96,7 @@ class ProductLink extends MagentoModuleAbstract
      */
     public function getTypes()
     {
-        return $this->__createAction('catalog_product_link.types', func_get_args());
+        return $this->__createAction('catalogProductLinkTypes', func_get_args());
     }
 
     /**
@@ -112,6 +112,6 @@ class ProductLink extends MagentoModuleAbstract
      */
     public function update($type, $productId, $linkedProductId, $data, $identifierType = null)
     {
-        return $this->__createAction('catalog_product_link.update', func_get_args());
+        return $this->__createAction('catalogProductLinkUpdate', func_get_args());
     }
 }

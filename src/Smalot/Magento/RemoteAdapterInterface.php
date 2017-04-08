@@ -33,15 +33,6 @@ interface RemoteAdapterInterface
     public function call(ActionInterface $action, $throwsException = true);
 
     /**
-     * @param MultiCallQueueInterface $queue
-     * @param bool                    $throwsException
-     *
-     * @return array
-     * @throws \Exception
-     */
-    public function multiCall(MultiCallQueueInterface $queue, $throwsException = false);
-
-    /**
      * @return bool
      */
     public function ping();

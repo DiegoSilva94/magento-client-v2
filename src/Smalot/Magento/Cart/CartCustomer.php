@@ -37,7 +37,7 @@ class CartCustomer extends MagentoModuleAbstract
      */
     public function setAddresses($quoteId, $customerAddressData, $store = null)
     {
-        return $this->__createAction('cart_customer.addresses', func_get_args());
+        return $this->__createAction('cartCustomerAddresses', func_get_args());
     }
 
     /**
@@ -51,6 +51,6 @@ class CartCustomer extends MagentoModuleAbstract
      */
     public function setCustomer($quoteId, $customerData, $store = null)
     {
-        return $this->__createAction('cart_customer.set', func_get_args());
+        return $this->__createAction('cartCustomerSet', func_get_args());
     }
 }

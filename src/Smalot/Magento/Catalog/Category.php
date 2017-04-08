@@ -35,7 +35,7 @@ class Category extends MagentoModuleAbstract
      */
     public function getAssignedProducts($categoryId)
     {
-        return $this->__createAction('catalog_category.assignedProducts', func_get_args());
+        return $this->__createAction('catalogCategoryAssignedProducts', func_get_args());
     }
 
     /**
@@ -50,7 +50,7 @@ class Category extends MagentoModuleAbstract
      */
     public function assignProduct($categoryId, $productId, $position = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_category.assignProduct', func_get_args());
+        return $this->__createAction('catalogCategoryAssignProduct', func_get_args());
     }
 
     /**
@@ -64,7 +64,7 @@ class Category extends MagentoModuleAbstract
      */
     public function create($parentId, $categoryData, $storeView = null)
     {
-        return $this->__createAction('catalog_category.create', func_get_args());
+        return $this->__createAction('catalogCategoryCreate', func_get_args());
     }
 
     /**
@@ -76,7 +76,7 @@ class Category extends MagentoModuleAbstract
      */
     public function setCurrentStore($storeView)
     {
-        return $this->__createAction('catalog_category.currentStore', func_get_args());
+        return $this->__createAction('catalogCategoryCurrentStore', func_get_args());
     }
 
     /**
@@ -88,7 +88,7 @@ class Category extends MagentoModuleAbstract
      */
     public function delete($categoryId)
     {
-        return $this->__createAction('catalog_category.delete', func_get_args());
+        return $this->__createAction('catalogCategoryDelete', func_get_args());
     }
 
     /**
@@ -102,7 +102,7 @@ class Category extends MagentoModuleAbstract
      */
     public function getInfo($categoryId, $storeView = null, $attributes = null)
     {
-        return $this->__createAction('catalog_category.info', func_get_args());
+        return $this->__createAction('catalogCategoryInfo', func_get_args());
     }
 
     /**
@@ -116,7 +116,7 @@ class Category extends MagentoModuleAbstract
      */
     public function getLevel($website, $storeView = null, $parentCategory = null)
     {
-        return $this->__createAction('catalog_category.level', func_get_args());
+        return $this->__createAction('catalogCategoryLevel', func_get_args());
     }
 
     /**
@@ -130,7 +130,7 @@ class Category extends MagentoModuleAbstract
      */
     public function move($categoryId, $parentId, $afterId = null)
     {
-        return $this->__createAction('catalog_category.move', func_get_args());
+        return $this->__createAction('catalogCategoryMove', func_get_args());
     }
 
     /**
@@ -144,7 +144,7 @@ class Category extends MagentoModuleAbstract
      */
     public function removeProduct($categoryId, $productId, $identifierType = null)
     {
-        return $this->__createAction('catalog_category.removeProduct', func_get_args());
+        return $this->__createAction('catalogCategoryRemoveProduct', func_get_args());
     }
 
     /**
@@ -157,7 +157,7 @@ class Category extends MagentoModuleAbstract
      */
     public function getTree($parentId = null, $storeView = null)
     {
-        return $this->__createAction('catalog_category.tree', func_get_args());
+        return $this->__createAction('catalogCategoryTree', func_get_args());
     }
 
     /**
@@ -171,7 +171,7 @@ class Category extends MagentoModuleAbstract
      */
     public function update($categoryId, $categoryData, $storeView = null)
     {
-        return $this->__createAction('catalog_category.update', func_get_args());
+        return $this->__createAction('catalogCategoryUpdate', func_get_args());
     }
 
     /**
@@ -186,6 +186,6 @@ class Category extends MagentoModuleAbstract
      */
     public function updateProduct($categoryId, $productId, $position = null, $identifierType = null)
     {
-        return $this->__createAction('catalog_category.updateProduct', func_get_args());
+        return $this->__createAction('catalogCategoryUpdateProduct', func_get_args());
     }
 }

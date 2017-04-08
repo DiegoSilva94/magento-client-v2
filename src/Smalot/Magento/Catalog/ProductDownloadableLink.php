@@ -43,7 +43,7 @@ class ProductDownloadableLink extends MagentoModuleAbstract
      */
     public function add($productId, $resource, $resourceType, $store = null, $identifierType = null)
     {
-        return $this->__createAction('product_downloadable_link.add', func_get_args());
+        return $this->__createAction('catalogProductDownloadableLinkAdd', func_get_args());
     }
 
     /**
@@ -57,7 +57,7 @@ class ProductDownloadableLink extends MagentoModuleAbstract
      */
     public function getList($productId, $store = null, $identifierType = null)
     {
-        return $this->__createAction('product_downloadable_link.list', func_get_args());
+        return $this->__createAction('catalogProductDownloadableLinkList', func_get_args());
     }
 
     /**
@@ -70,6 +70,6 @@ class ProductDownloadableLink extends MagentoModuleAbstract
      */
     public function remove($linkId, $resourceType)
     {
-        return $this->__createAction('product_downloadable_link.remove', func_get_args());
+        return $this->__createAction('catalogProductDownloadableLinkRemove', func_get_args());
     }
 }

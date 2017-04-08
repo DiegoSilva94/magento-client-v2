@@ -35,7 +35,7 @@ class ProductTag extends MagentoModuleAbstract
      */
     public function add($data)
     {
-        return $this->__createAction('product_tag.add', func_get_args());
+        return $this->__createAction('catalogProductTagAdd', func_get_args());
     }
 
     /**
@@ -48,7 +48,7 @@ class ProductTag extends MagentoModuleAbstract
      */
     public function getInfo($tagId, $store = null)
     {
-        return $this->__createAction('product_tag.info', func_get_args());
+        return $this->__createAction('catalogProductTagInfo', func_get_args());
     }
 
     /**
@@ -61,7 +61,7 @@ class ProductTag extends MagentoModuleAbstract
      */
     public function getList($productId, $store = null)
     {
-        return $this->__createAction('product_tag.list', func_get_args());
+        return $this->__createAction('catalogProductTagList', func_get_args());
     }
 
     /**
@@ -73,7 +73,7 @@ class ProductTag extends MagentoModuleAbstract
      */
     public function remove($tagId)
     {
-        return $this->__createAction('product_tag.remove', func_get_args());
+        return $this->__createAction('catalogProductTagRemove', func_get_args());
     }
 
     /**
@@ -87,6 +87,6 @@ class ProductTag extends MagentoModuleAbstract
      */
     public function update($tagId, $data, $store = null)
     {
-        return $this->__createAction('product_tag.update', func_get_args());
+        return $this->__createAction('catalogProductTagUpdate', func_get_args());
     }
 }

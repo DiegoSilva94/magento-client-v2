@@ -35,7 +35,7 @@ class Cart extends MagentoModuleAbstract
      */
     public function create($storeId = null)
     {
-        return $this->__createAction('cart.create', func_get_args());
+        return $this->__createAction('cartCreate', func_get_args());
     }
 
     /**
@@ -48,7 +48,7 @@ class Cart extends MagentoModuleAbstract
      */
     public function getInfo($quoteId, $store = null)
     {
-        return $this->__createAction('cart.info', func_get_args());
+        return $this->__createAction('cartInfo', func_get_args());
     }
 
     /**
@@ -61,7 +61,7 @@ class Cart extends MagentoModuleAbstract
      */
     public function getLicense($quoteId, $store = null)
     {
-        return $this->__createAction('cart.license', func_get_args());
+        return $this->__createAction('cartLicense', func_get_args());
     }
 
     /**
@@ -76,7 +76,7 @@ class Cart extends MagentoModuleAbstract
      */
     public function order($quoteId, $store = null, $agreements = null)
     {
-        return $this->__createAction('cart.order', func_get_args());
+        return $this->__createAction('cartOrder', func_get_args());
     }
 
     /**
@@ -89,6 +89,6 @@ class Cart extends MagentoModuleAbstract
      */
     public function getTotals($quoteId, $store = null)
     {
-        return $this->__createAction('cart.totals', func_get_args());
+        return $this->__createAction('cartTotals', func_get_args());
     }
 }

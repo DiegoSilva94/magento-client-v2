@@ -210,8 +210,7 @@ class RemoteAdapter implements RemoteAdapterInterface
         try {
             $this->checkSecurity();
 
-            $result = $this->soapClient->call($this->sessionId, $action->getMethod(), $action->getArguments());
-
+            $result = $this->soapClient->{$action->getMethod()}($this->sessionId, $action->getArguments());
             return $result;
 
         } catch (\Exception $e) {

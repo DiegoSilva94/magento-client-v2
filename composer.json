@@ -1,6 +1,6 @@
 {
     "name": "dsilva94/magento-client-v2",
-    "description": "Magento API Client (SOAP v1). Allows wrappers for each call, dependency injections and code completion.",
+    "description": "Magento API Client (SOAP v2). Allows wrappers for each call, dependency injections and code completion.",
     "license": "MIT",
     "authors": [
         {

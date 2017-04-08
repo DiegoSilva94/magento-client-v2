@@ -38,7 +38,7 @@ class Order extends MagentoModuleAbstract
      */
     public function addComment($orderIncrementId, $status, $comment = null, $notify = null)
     {
-        return $this->__createAction('order.addComment', func_get_args());
+        return $this->__createAction('orderAddComment', func_get_args());
     }
 
     /**
@@ -50,7 +50,7 @@ class Order extends MagentoModuleAbstract
      */
     public function cancel($orderIncrementId)
     {
-        return $this->__createAction('order.cancel', func_get_args());
+        return $this->__createAction('orderCancel', func_get_args());
     }
 
     /**
@@ -62,7 +62,7 @@ class Order extends MagentoModuleAbstract
      */
     public function hold($orderIncrementId)
     {
-        return $this->__createAction('order.hold', func_get_args());
+        return $this->__createAction('orderHold', func_get_args());
     }
 
     /**
@@ -74,7 +74,7 @@ class Order extends MagentoModuleAbstract
      */
     public function getInfo($orderIncrementId)
     {
-        return $this->__createAction('order.info', func_get_args());
+        return $this->__createAction('orderInfo', func_get_args());
     }
 
     /**
@@ -86,7 +86,7 @@ class Order extends MagentoModuleAbstract
      */
     public function getList($filters)
     {
-        return $this->__createAction('order.list', func_get_args());
+        return $this->__createAction('orderList', func_get_args());
     }
 
     /**
@@ -98,6 +98,6 @@ class Order extends MagentoModuleAbstract
      */
     public function unhold($orderIncrementId)
     {
-        return $this->__createAction('order.unhold', func_get_args());
+        return $this->__createAction('orderUnhold', func_get_args());
     }
 }

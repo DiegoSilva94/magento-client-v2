@@ -37,7 +37,7 @@ class GiftMessage extends MagentoModuleAbstract
      */
     public function setForQuote($quoteId, $giftMessage, $store)
     {
-        return $this->__createAction('giftmessage.setForQuote', func_get_args());
+        return $this->__createAction('giftMessageSetForQuote', func_get_args());
     }
 
     /**
@@ -51,7 +51,7 @@ class GiftMessage extends MagentoModuleAbstract
      */
     public function setForQuoteItem($quoteItemId, $giftMessage, $store)
     {
-        return $this->__createAction('giftmessage.setForQuoteItem', func_get_args());
+        return $this->__createAction('giftMessageSetForQuoteItem', func_get_args());
     }
 
     /**
@@ -65,6 +65,6 @@ class GiftMessage extends MagentoModuleAbstract
      */
     public function setForQuoteProduct($quoteId, $productsAndMessages, $store)
     {
-        return $this->__createAction('giftmessage.setForQuoteProduct', func_get_args());
+        return $this->__createAction('giftMessageSetForQuoteProduct', func_get_args());
     }
 }

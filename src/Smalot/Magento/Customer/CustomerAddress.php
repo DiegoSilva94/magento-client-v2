@@ -36,7 +36,7 @@ class CustomerAddress extends MagentoModuleAbstract
      */
     public function create($customerId, $addressData)
     {
-        return $this->__createAction('customer_address.create', func_get_args());
+        return $this->__createAction('customerAddressCreate', func_get_args());
     }
 
     /**
@@ -48,7 +48,7 @@ class CustomerAddress extends MagentoModuleAbstract
      */
     public function delete($addressId)
     {
-        return $this->__createAction('customer_address.delete', func_get_args());
+        return $this->__createAction('customerAddressDelete', func_get_args());
     }
 
     /**
@@ -60,7 +60,7 @@ class CustomerAddress extends MagentoModuleAbstract
      */
     public function getInfo($addressId)
     {
-        return $this->__createAction('customer_address.info', func_get_args());
+        return $this->__createAction('customerAddressInfo', func_get_args());
     }
 
     /**
@@ -72,7 +72,7 @@ class CustomerAddress extends MagentoModuleAbstract
      */
     public function getList($customerId)
     {
-        return $this->__createAction('customer_address.list', func_get_args());
+        return $this->__createAction('customerCustomerList', func_get_args());
     }
 
     /**
@@ -85,6 +85,6 @@ class CustomerAddress extends MagentoModuleAbstract
      */
     public function update($addressId, $addressData)
     {
-        return $this->__createAction('customer_address.update', func_get_args());
+        return $this->__createAction('customerCustomerUpdate', func_get_args());
     }
 }

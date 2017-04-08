@@ -39,7 +39,7 @@ class OrderCreditMemo extends MagentoModuleAbstract
      */
     public function addComment($creditmemoIncrementId, $comment = null, $notifyCustomer = null, $includeComment = null)
     {
-        return $this->__createAction('order_creditmemo.addComment', func_get_args());
+        return $this->__createAction('salesOrderCreditmemoAddComment', func_get_args());
     }
 
     /**
@@ -51,7 +51,7 @@ class OrderCreditMemo extends MagentoModuleAbstract
      */
     public function cancel($creditmemoIncrementId)
     {
-        return $this->__createAction('order_creditmemo.cancel', func_get_args());
+        return $this->__createAction('salesOrderCreditmemoCancel', func_get_args());
     }
 
     /**
@@ -75,7 +75,7 @@ class OrderCreditMemo extends MagentoModuleAbstract
         $includeComment = null,
         $refundToStoreCreditAmount = null
     ) {
-        return $this->__createAction('order_creditmemo.create', func_get_args());
+        return $this->__createAction('salesOrderCreditmemoCreate', func_get_args());
     }
 
     /**
@@ -87,7 +87,7 @@ class OrderCreditMemo extends MagentoModuleAbstract
      */
     public function getInfo($creditmemoIncrementId)
     {
-        return $this->__createAction('order_creditmemo.info', func_get_args());
+        return $this->__createAction('salesOrderCreditmemoInfo', func_get_args());
     }
 
     /**
@@ -99,6 +99,6 @@ class OrderCreditMemo extends MagentoModuleAbstract
      */
     public function getList($filters)
     {
-        return $this->__createAction('order_creditmemo.list', func_get_args());
+        return $this->__createAction('salesOrderCreditmemoList', func_get_args());
     }
 }

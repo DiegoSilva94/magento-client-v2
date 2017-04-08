@@ -36,7 +36,7 @@ class StoreCredit extends MagentoModuleAbstract
      */
     public function getBalance($customerId, $websiteId)
     {
-        return $this->__createAction('storecredit.balance', func_get_args());
+        return $this->__createAction('enterpriseCustomerbalanceBalance', func_get_args());
     }
 
     /**
@@ -49,6 +49,6 @@ class StoreCredit extends MagentoModuleAbstract
      */
     public function getHistory($customerId, $websiteId = null)
     {
-        return $this->__createAction('storecredit.history', func_get_args());
+        return $this->__createAction('enterpriseCustomerbalanceHistory', func_get_args());
     }
 }

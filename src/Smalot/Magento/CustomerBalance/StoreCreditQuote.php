@@ -36,7 +36,7 @@ class StoreCreditQuote extends MagentoModuleAbstract
      */
     public function removeAmount($quoteId, $store = null)
     {
-        return $this->__createAction('storecredit_quote.removeAmount', func_get_args());
+        return $this->__createAction('shoppingCartCustomerbalanceRemoveAmount', func_get_args());
     }
 
     /**
@@ -49,6 +49,6 @@ class StoreCreditQuote extends MagentoModuleAbstract
      */
     public function setAmount($quoteId, $store = null)
     {
-        return $this->__createAction('storecredit_quote.setAmount', func_get_args());
+        return $this->__createAction('shoppingCartCustomerbalanceSetAmount', func_get_args());
     }
 }

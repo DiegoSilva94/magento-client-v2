@@ -38,7 +38,7 @@ class OrderInvoice extends MagentoModuleAbstract
      */
     public function addComment($invoiceIncrementId, $comment = null, $email = null, $includeComment = null)
     {
-        return $this->__createAction('order_invoice.addComment', func_get_args());
+        return $this->__createAction('salesOrderInvoiceAddComment', func_get_args());
     }
 
     /**
@@ -53,7 +53,7 @@ class OrderInvoice extends MagentoModuleAbstract
      */
     public function cancel($invoiceIncrementId)
     {
-        return $this->__createAction('order_invoice.cancel', func_get_args());
+        return $this->__createAction('salesOrderInvoiceCancel', func_get_args());
     }
 
     /**
@@ -67,7 +67,7 @@ class OrderInvoice extends MagentoModuleAbstract
      */
     public function capture($invoiceIncrementId)
     {
-        return $this->__createAction('order_invoice.capture', func_get_args());
+        return $this->__createAction('salesOrderInvoiceCapture', func_get_args());
     }
 
     /**
@@ -83,7 +83,7 @@ class OrderInvoice extends MagentoModuleAbstract
      */
     public function create($orderIncrementId, $itemsQty, $comment, $email, $includeComment)
     {
-        return $this->__createAction('order_invoice.create', func_get_args());
+        return $this->__createAction('salesOrderInvoiceCreate', func_get_args());
     }
 
     /**
@@ -93,7 +93,7 @@ class OrderInvoice extends MagentoModuleAbstract
      */
     public function getInfo($invoiceIncrementId)
     {
-        return $this->__createAction('order_invoice.info', func_get_args());
+        return $this->__createAction('salesOrderInvoiceInfo', func_get_args());
     }
 
     /**
@@ -103,6 +103,6 @@ class OrderInvoice extends MagentoModuleAbstract
      */
     public function getList($filters = null)
     {
-        return $this->__createAction('order_invoice.list', func_get_args());
+        return $this->__createAction('salesOrderInvoiceList', func_get_args());
     }
 }

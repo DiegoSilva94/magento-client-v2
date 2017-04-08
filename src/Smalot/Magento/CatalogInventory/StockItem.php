@@ -35,7 +35,7 @@ class StockItem extends MagentoModuleAbstract
      */
     public function getList($productIds)
     {
-        return $this->__createAction('cataloginventory_stock_item.list', func_get_args());
+        return $this->__createAction('catalogInventoryStockItemList', func_get_args());
     }
 
     /**
@@ -48,6 +48,6 @@ class StockItem extends MagentoModuleAbstract
      */
     public function update($productId, $data)
     {
-        return $this->__createAction('cataloginventory_stock_item.update', func_get_args());
+        return $this->__createAction('catalogInventoryStockItemUpdate', func_get_args());
     }
 }

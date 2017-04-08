@@ -38,7 +38,7 @@ class OrderShipment extends MagentoModuleAbstract
      */
     public function addComment($shipmentIncrementId, $comment = null, $email = null, $includeInEmail = null)
     {
-        return $this->__createAction('order_shipment.addComment', func_get_args());
+        return $this->__createAction('salesOrderShipmentAddComment', func_get_args());
     }
 
     /**
@@ -53,7 +53,7 @@ class OrderShipment extends MagentoModuleAbstract
      */
     public function addTrack($shipmentIncrementId, $carrier, $title, $trackNumber)
     {
-        return $this->__createAction('order_shipment.addTrack', func_get_args());
+        return $this->__createAction('salesOrderShipmentAddTrack', func_get_args());
     }
 
     /**
@@ -69,7 +69,7 @@ class OrderShipment extends MagentoModuleAbstract
      */
     public function create($orderIncrementId, $itemsQty = null, $comment = null, $email = null, $includeComment = null)
     {
-        return $this->__createAction('order_shipment.create', func_get_args());
+        return $this->__createAction('salesOrderShipmentCreate', func_get_args());
     }
 
     /**
@@ -81,7 +81,7 @@ class OrderShipment extends MagentoModuleAbstract
      */
     public function getCarriers($orderIncrementId)
     {
-        return $this->__createAction('order_shipment.getCarriers', func_get_args());
+        return $this->__createAction('salesOrderShipmentGetCarriers', func_get_args());
     }
 
     /**
@@ -93,7 +93,7 @@ class OrderShipment extends MagentoModuleAbstract
      */
     public function getInfo($shipmentIncrementId)
     {
-        return $this->__createAction('order_shipment.info', func_get_args());
+        return $this->__createAction('salesOrderShipmentInfo', func_get_args());
     }
 
     /**
@@ -106,7 +106,7 @@ class OrderShipment extends MagentoModuleAbstract
      */
     public function getList($filters)
     {
-        return $this->__createAction('order_shipment.list', func_get_args());
+        return $this->__createAction('salesOrderShipmentList', func_get_args());
     }
 
     /**
@@ -119,6 +119,6 @@ class OrderShipment extends MagentoModuleAbstract
      */
     public function removeTrack($shipmentIncrementId, $trackId)
     {
-        return $this->__createAction('order_shipment.removeTrack', func_get_args());
+        return $this->__createAction('salesOrderShipmentRemoveTrack', func_get_args());
     }
 }

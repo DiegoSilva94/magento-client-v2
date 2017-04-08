@@ -33,6 +33,6 @@ class Magento extends MagentoModuleAbstract
      */
     public function getInfo()
     {
-        return $this->__createAction('core_magento.info', func_get_args());
+        return $this->__createAction('magentoInfo', func_get_args());
     }
 }

@@ -33,7 +33,7 @@ class Store extends MagentoModuleAbstract
      */
     public function getList()
     {
-        return $this->__createAction('store.list', func_get_args());
+        return $this->__createAction('storeList', func_get_args());
     }
 
     /**
@@ -45,6 +45,6 @@ class Store extends MagentoModuleAbstract
      */
     public function getInfo($storeId = null)
     {
-        return $this->__createAction('store.info', func_get_args());
+        return $this->__createAction('storeInfo', func_get_args());
     }
 }

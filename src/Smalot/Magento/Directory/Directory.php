@@ -33,7 +33,7 @@ class Directory extends MagentoModuleAbstract
      */
     public function getCountryList()
     {
-        return $this->__createAction('directory_country.list', func_get_args());
+        return $this->__createAction('directoryCountryList', func_get_args());
     }
 
     /**
@@ -45,6 +45,6 @@ class Directory extends MagentoModuleAbstract
      */
     public function getRegionList($country)
     {
-        return $this->__createAction('directory_region.list', func_get_args());
+        return $this->__createAction('directoryRegionList', func_get_args());
     }
 }

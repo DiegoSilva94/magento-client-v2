@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Smalot\\Magento\\": "src/"
+            "Smalot\\V2\\": "src/Smalot/V2"
         }
     }
 }

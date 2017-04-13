@@ -78,7 +78,7 @@ class RemoteAdapter implements RemoteAdapterInterface
      */
     public function __construct($path, $apiUser, $apiKey, $options = array(), $autoLogin = true)
     {
-        $this->wsdl      = rtrim($path, '/') . '/index.php/api/soap/?wsdl';
+        $this->wsdl      = $path;
         $this->apiUser   = $apiUser;
         $this->apiKey    = $apiKey;
         $this->autoLogin = $autoLogin;

@@ -1,6 +1,6 @@
 {
-    "name": "dsilva94/magento-client-v2",
-    "description": "Magento API Client (SOAP v2). Allows wrappers for each call, dependency injections and code completion.",
+    "name": "smalot/magento-client",
+    "description": "Magento API Client (SOAP v1). Allows wrappers for each call, dependency injections and code completion.",
     "license": "MIT",
     "authors": [
         {
@@ -8,17 +8,6 @@
             "email": "sebastien@malot.fr",
             "role": "Developer",
             "homepage": "http://www.malot.fr"
-        },
-        {
-            "name": "Diego da Silva Oliveira",
-            "email": "dsilvaoliveira94@gmail.com",
-            "role": "Developer",
-            "homepage": "http://dsilva.eti.br"
-        },
-        {
-            "name": "Kaio Teixeira",
-            "email": "kaio.teco@gmail.com",
-            "role": "Developer"
         }
     ],
     "support": {
@@ -31,8 +20,8 @@
         "atoum/atoum": "dev-master"
     },
     "autoload": {
-        "psr-4": {
-            "Smalot\\V2\\": "src/V2"
+        "psr-0": {
+            "Smalot\\V2\\": "src/Smalot/V2"
         }
     }
 }

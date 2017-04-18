@@ -1,12 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "31347848a20072fbe4887ba991511609",
-    "packages": [
-
-    ],
+    "content-hash": "ed0156fe555f2d56d88f2cc355b4bb19",
+    "packages": [],
     "packages-dev": [
         {
             "name": "atoum/atoum",
@@ -14,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/atoum/atoum.git",
-                "reference": "ab221f3dfbca93ff5a88f45070d8743db419d546"
+                "reference": "d96bb2ffc75e4db8bb6a8b52f554c3739b484019"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atoum/atoum/zipball/ab221f3dfbca93ff5a88f45070d8743db419d546",
-                "reference": "ab221f3dfbca93ff5a88f45070d8743db419d546",
+                "url": "https://api.github.com/repos/atoum/atoum/zipball/d96bb2ffc75e4db8bb6a8b52f554c3739b484019",
+                "reference": "d96bb2ffc75e4db8bb6a8b52f554c3739b484019",
                 "shasum": ""
             },
             "require": {
@@ -28,18 +27,28 @@
                 "ext-session": "*",
                 "ext-tokenizer": "*",
                 "ext-xml": "*",
-                "php": ">=5.3.3"
+                "php": "^5.6.0 || ^7.0.0"
             },
             "replace": {
                 "mageekguy/atoum": "*"
             },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~1.12"
+            },
             "suggest": {
-                "ext-mbstring": "Provides support for UTF-8 strings"
+                "atoum/stubs": "Provides IDE support (like autocompletion) for atoum",
+                "ext-mbstring": "Provides support for UTF-8 strings",
+                "ext-xdebug": "Provides code coverage report (>= 2.3)"
             },
             "bin": [
                 "bin/atoum"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
             "autoload": {
                 "classmap": [
                     "classes/"
@@ -47,7 +56,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -80,20 +89,18 @@
                 "test",
                 "unit testing"
             ],
-            "time": "2013-10-24 11:42:42"
+            "time": "2017-02-22T15:10:54+00:00"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "atoum/atoum": 20
     },
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.0"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
